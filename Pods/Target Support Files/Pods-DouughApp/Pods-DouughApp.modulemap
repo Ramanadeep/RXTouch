@@ -1,0 +1,6 @@
+framework module Pods_DouughApp {
+  umbrella header "Pods-DouughApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

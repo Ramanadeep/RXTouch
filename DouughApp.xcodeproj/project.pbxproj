@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2E52B4DEFE4D8EB41BC551 /* Pods_DouughApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BBFE89EF965C0FF69E6EDD /* Pods_DouughApp.framework */; };
+		3BEAD7E0B188B19EBFF2108B /* Pods_DouughAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EDD21DDEF375194B7402AD /* Pods_DouughAppTests.framework */; };
+		5951424C21F17D00009D4260 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951424B21F17D00009D4260 /* ApiClient.swift */; };
+		5951424E21F17EFA009D4260 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951424D21F17EFA009D4260 /* APIRequest.swift */; };
+		5951425021F18F66009D4260 /* UsersServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951424F21F18F66009D4260 /* UsersServiceRequest.swift */; };
+		59515D4921F057EC00FDCBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D4821F057EC00FDCBD4 /* AppDelegate.swift */; };
+		59515D5021F0580200FDCBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59515D4F21F0580200FDCBD4 /* Assets.xcassets */; };
+		59515D5E21F0580200FDCBD4 /* DouughAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D5D21F0580200FDCBD4 /* DouughAppTests.swift */; };
+		59515D6921F0580300FDCBD4 /* DouughAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D6821F0580300FDCBD4 /* DouughAppUITests.swift */; };
+		59515D7E21F0595100FDCBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59515D7A21F0595100FDCBD4 /* LaunchScreen.storyboard */; };
+		59515D7F21F0595100FDCBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59515D7B21F0595100FDCBD4 /* Main.storyboard */; };
+		59515D8121F059B600FDCBD4 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D8021F059B600FDCBD4 /* UsersListViewController.swift */; };
+		59515D8321F05B0B00FDCBD4 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D8221F05B0B00FDCBD4 /* UsersViewModel.swift */; };
+		59515D8521F06CBB00FDCBD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D8421F06CBB00FDCBD4 /* User.swift */; };
+		E33CF6392A039BF06324F236 /* Pods_DouughAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21F1F4E19139273AE14665B /* Pods_DouughAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59515D5A21F0580200FDCBD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59515D3D21F057EC00FDCBD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59515D4421F057EC00FDCBD4;
+			remoteInfo = DouughApp;
+		};
+		59515D6521F0580300FDCBD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59515D3D21F057EC00FDCBD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59515D4421F057EC00FDCBD4;
+			remoteInfo = DouughApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04602F7985AB1BF5440A3780 /* Pods-DouughApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp.debug.xcconfig"; sourceTree = "<group>"; };
+		29CCD65D1733C1AAD6FF51EE /* Pods-DouughAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouughAppTests/Pods-DouughAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FAA0A90C694DA3BE0553A22 /* Pods-DouughAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouughAppUITests/Pods-DouughAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5951424B21F17D00009D4260 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		5951424D21F17EFA009D4260 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		5951424F21F18F66009D4260 /* UsersServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceRequest.swift; sourceTree = "<group>"; };
+		59515D4521F057EC00FDCBD4 /* DouughApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouughApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59515D4821F057EC00FDCBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59515D4F21F0580200FDCBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59515D5421F0580200FDCBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59515D5921F0580200FDCBD4 /* DouughAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouughAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59515D5D21F0580200FDCBD4 /* DouughAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouughAppTests.swift; sourceTree = "<group>"; };
+		59515D5F21F0580200FDCBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59515D6421F0580300FDCBD4 /* DouughAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouughAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59515D6821F0580300FDCBD4 /* DouughAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouughAppUITests.swift; sourceTree = "<group>"; };
+		59515D6A21F0580300FDCBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59515D7A21F0595100FDCBD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59515D7B21F0595100FDCBD4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		59515D8021F059B600FDCBD4 /* UsersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		59515D8221F05B0B00FDCBD4 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		59515D8421F06CBB00FDCBD4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6E42007358BDBBEC07E66D96 /* Pods-DouughApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp.release.xcconfig"; sourceTree = "<group>"; };
+		72EDD21DDEF375194B7402AD /* Pods_DouughAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouughAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BBFE89EF965C0FF69E6EDD /* Pods_DouughApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouughApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F56EBC028AFB9D40EC234D /* Pods-DouughAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouughAppUITests/Pods-DouughAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C21F1F4E19139273AE14665B /* Pods_DouughAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouughAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A6CFF43A5282D3182B863F /* Pods-DouughAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouughAppTests/Pods-DouughAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59515D4221F057EC00FDCBD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2E52B4DEFE4D8EB41BC551 /* Pods_DouughApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59515D5621F0580200FDCBD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEAD7E0B188B19EBFF2108B /* Pods_DouughAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59515D6121F0580300FDCBD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E33CF6392A039BF06324F236 /* Pods_DouughAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D4DE7F6DC8BF3A7DF3AFEB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2BBFE89EF965C0FF69E6EDD /* Pods_DouughApp.framework */,
+				72EDD21DDEF375194B7402AD /* Pods_DouughAppTests.framework */,
+				C21F1F4E19139273AE14665B /* Pods_DouughAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5951424A21F17CE6009D4260 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5951424B21F17D00009D4260 /* ApiClient.swift */,
+				5951424D21F17EFA009D4260 /* APIRequest.swift */,
+				5951424F21F18F66009D4260 /* UsersServiceRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		59515D3C21F057EC00FDCBD4 = {
+			isa = PBXGroup;
+			children = (
+				59515D4721F057EC00FDCBD4 /* DouughApp */,
+				59515D5C21F0580200FDCBD4 /* DouughAppTests */,
+				59515D6721F0580300FDCBD4 /* DouughAppUITests */,
+				59515D4621F057EC00FDCBD4 /* Products */,
+				8107E5359D571999F599DA18 /* Pods */,
+				3D4DE7F6DC8BF3A7DF3AFEB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59515D4621F057EC00FDCBD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59515D4521F057EC00FDCBD4 /* DouughApp.app */,
+				59515D5921F0580200FDCBD4 /* DouughAppTests.xctest */,
+				59515D6421F0580300FDCBD4 /* DouughAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59515D4721F057EC00FDCBD4 /* DouughApp */ = {
+			isa = PBXGroup;
+			children = (
+				5951424A21F17CE6009D4260 /* Services */,
+				59515D7721F0595100FDCBD4 /* Models */,
+				59515D7621F0595100FDCBD4 /* ViewModels */,
+				59515D7821F0595100FDCBD4 /* Views */,
+				59515D4821F057EC00FDCBD4 /* AppDelegate.swift */,
+				59515D4F21F0580200FDCBD4 /* Assets.xcassets */,
+				59515D5421F0580200FDCBD4 /* Info.plist */,
+			);
+			path = DouughApp;
+			sourceTree = "<group>";
+		};
+		59515D5C21F0580200FDCBD4 /* DouughAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				59515D5D21F0580200FDCBD4 /* DouughAppTests.swift */,
+				59515D5F21F0580200FDCBD4 /* Info.plist */,
+			);
+			path = DouughAppTests;
+			sourceTree = "<group>";
+		};
+		59515D6721F0580300FDCBD4 /* DouughAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59515D6821F0580300FDCBD4 /* DouughAppUITests.swift */,
+				59515D6A21F0580300FDCBD4 /* Info.plist */,
+			);
+			path = DouughAppUITests;
+			sourceTree = "<group>";
+		};
+		59515D7621F0595100FDCBD4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				59515D8221F05B0B00FDCBD4 /* UsersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		59515D7721F0595100FDCBD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59515D8421F06CBB00FDCBD4 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59515D7821F0595100FDCBD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59515D7921F0595100FDCBD4 /* Storyboards */,
+				59515D7C21F0595100FDCBD4 /* ViewControllers */,
+				59515D7D21F0595100FDCBD4 /* CustomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59515D7921F0595100FDCBD4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				59515D7A21F0595100FDCBD4 /* LaunchScreen.storyboard */,
+				59515D7B21F0595100FDCBD4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		59515D7C21F0595100FDCBD4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				59515D8021F059B600FDCBD4 /* UsersListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		59515D7D21F0595100FDCBD4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8107E5359D571999F599DA18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04602F7985AB1BF5440A3780 /* Pods-DouughApp.debug.xcconfig */,
+				6E42007358BDBBEC07E66D96 /* Pods-DouughApp.release.xcconfig */,
+				29CCD65D1733C1AAD6FF51EE /* Pods-DouughAppTests.debug.xcconfig */,
+				C6A6CFF43A5282D3182B863F /* Pods-DouughAppTests.release.xcconfig */,
+				3FAA0A90C694DA3BE0553A22 /* Pods-DouughAppUITests.debug.xcconfig */,
+				B4F56EBC028AFB9D40EC234D /* Pods-DouughAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59515D4421F057EC00FDCBD4 /* DouughApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59515D6D21F0580300FDCBD4 /* Build configuration list for PBXNativeTarget "DouughApp" */;
+			buildPhases = (
+				3C4F9D506183E5F50DDAC6C3 /* [CP] Check Pods Manifest.lock */,
+				59515D4121F057EC00FDCBD4 /* Sources */,
+				59515D4221F057EC00FDCBD4 /* Frameworks */,
+				59515D4321F057EC00FDCBD4 /* Resources */,
+				37104C9981DBADD492D33741 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouughApp;
+			productName = DouughApp;
+			productReference = 59515D4521F057EC00FDCBD4 /* DouughApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59515D5821F0580200FDCBD4 /* DouughAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59515D7021F0580300FDCBD4 /* Build configuration list for PBXNativeTarget "DouughAppTests" */;
+			buildPhases = (
+				B6C9A8DE96F116573F8B0756 /* [CP] Check Pods Manifest.lock */,
+				59515D5521F0580200FDCBD4 /* Sources */,
+				59515D5621F0580200FDCBD4 /* Frameworks */,
+				59515D5721F0580200FDCBD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59515D5B21F0580200FDCBD4 /* PBXTargetDependency */,
+			);
+			name = DouughAppTests;
+			productName = DouughAppTests;
+			productReference = 59515D5921F0580200FDCBD4 /* DouughAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59515D6321F0580300FDCBD4 /* DouughAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59515D7321F0580300FDCBD4 /* Build configuration list for PBXNativeTarget "DouughAppUITests" */;
+			buildPhases = (
+				BDAFD458EA66A92A8597FEAB /* [CP] Check Pods Manifest.lock */,
+				59515D6021F0580300FDCBD4 /* Sources */,
+				59515D6121F0580300FDCBD4 /* Frameworks */,
+				59515D6221F0580300FDCBD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59515D6621F0580300FDCBD4 /* PBXTargetDependency */,
+			);
+			name = DouughAppUITests;
+			productName = DouughAppUITests;
+			productReference = 59515D6421F0580300FDCBD4 /* DouughAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59515D3D21F057EC00FDCBD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "raman singh";
+				TargetAttributes = {
+					59515D4421F057EC00FDCBD4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					59515D5821F0580200FDCBD4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 59515D4421F057EC00FDCBD4;
+					};
+					59515D6321F0580300FDCBD4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 59515D4421F057EC00FDCBD4;
+					};
+				};
+			};
+			buildConfigurationList = 59515D4021F057EC00FDCBD4 /* Build configuration list for PBXProject "DouughApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59515D3C21F057EC00FDCBD4;
+			productRefGroup = 59515D4621F057EC00FDCBD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59515D4421F057EC00FDCBD4 /* DouughApp */,
+				59515D5821F0580200FDCBD4 /* DouughAppTests */,
+				59515D6321F0580300FDCBD4 /* DouughAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59515D4321F057EC00FDCBD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59515D7F21F0595100FDCBD4 /* Main.storyboard in Resources */,
+				59515D7E21F0595100FDCBD4 /* LaunchScreen.storyboard in Resources */,
+				59515D5021F0580200FDCBD4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59515D5721F0580200FDCBD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59515D6221F0580300FDCBD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37104C9981DBADD492D33741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObservableArray-RxSwift/ObservableArray_RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObservableArray_RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C4F9D506183E5F50DDAC6C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouughApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C9A8DE96F116573F8B0756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouughAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAFD458EA66A92A8597FEAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouughAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59515D4121F057EC00FDCBD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59515D8521F06CBB00FDCBD4 /* User.swift in Sources */,
+				59515D4921F057EC00FDCBD4 /* AppDelegate.swift in Sources */,
+				5951425021F18F66009D4260 /* UsersServiceRequest.swift in Sources */,
+				59515D8321F05B0B00FDCBD4 /* UsersViewModel.swift in Sources */,
+				59515D8121F059B600FDCBD4 /* UsersListViewController.swift in Sources */,
+				5951424E21F17EFA009D4260 /* APIRequest.swift in Sources */,
+				5951424C21F17D00009D4260 /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59515D5521F0580200FDCBD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59515D5E21F0580200FDCBD4 /* DouughAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59515D6021F0580300FDCBD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59515D6921F0580300FDCBD4 /* DouughAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59515D5B21F0580200FDCBD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59515D4421F057EC00FDCBD4 /* DouughApp */;
+			targetProxy = 59515D5A21F0580200FDCBD4 /* PBXContainerItemProxy */;
+		};
+		59515D6621F0580300FDCBD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59515D4421F057EC00FDCBD4 /* DouughApp */;
+			targetProxy = 59515D6521F0580300FDCBD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59515D6B21F0580300FDCBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59515D6C21F0580300FDCBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59515D6E21F0580300FDCBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04602F7985AB1BF5440A3780 /* Pods-DouughApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouughApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RamanSingh.DouughApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59515D6F21F0580300FDCBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E42007358BDBBEC07E66D96 /* Pods-DouughApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouughApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RamanSingh.DouughApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59515D7121F0580300FDCBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29CCD65D1733C1AAD6FF51EE /* Pods-DouughAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouughAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RamanSingh.DouughAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouughApp.app/DouughApp";
+			};
+			name = Debug;
+		};
+		59515D7221F0580300FDCBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A6CFF43A5282D3182B863F /* Pods-DouughAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouughAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RamanSingh.DouughAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouughApp.app/DouughApp";
+			};
+			name = Release;
+		};
+		59515D7421F0580300FDCBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAA0A90C694DA3BE0553A22 /* Pods-DouughAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouughAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RamanSingh.DouughAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DouughApp;
+			};
+			name = Debug;
+		};
+		59515D7521F0580300FDCBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F56EBC028AFB9D40EC234D /* Pods-DouughAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouughAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RamanSingh.DouughAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DouughApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59515D4021F057EC00FDCBD4 /* Build configuration list for PBXProject "DouughApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59515D6B21F0580300FDCBD4 /* Debug */,
+				59515D6C21F0580300FDCBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59515D6D21F0580300FDCBD4 /* Build configuration list for PBXNativeTarget "DouughApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59515D6E21F0580300FDCBD4 /* Debug */,
+				59515D6F21F0580300FDCBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59515D7021F0580300FDCBD4 /* Build configuration list for PBXNativeTarget "DouughAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59515D7121F0580300FDCBD4 /* Debug */,
+				59515D7221F0580300FDCBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59515D7321F0580300FDCBD4 /* Build configuration list for PBXNativeTarget "DouughAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59515D7421F0580300FDCBD4 /* Debug */,
+				59515D7521F0580300FDCBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59515D3D21F057EC00FDCBD4 /* Project object */;
+}
