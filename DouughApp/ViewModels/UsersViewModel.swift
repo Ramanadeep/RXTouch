@@ -23,7 +23,6 @@ class UserViewModel{
     
     init() {
         getUsers()
-        //getUserArray()
     }
     
     func getUsers() {
@@ -39,7 +38,6 @@ class UserViewModel{
                                              encoding: .ascii)
                     let usersArray = Mapper<UserMap>().mapArray(JSONString: theJSONText!)
                     self.newValue.appendContentsOf(usersArray ?? [])
-                    self.value.onNext(usersArray!)
                 }
             } catch {
                 self.value.onError(error)
@@ -53,10 +51,21 @@ class UserViewModel{
             }.disposed(by: self.disposeableBag)
     }
     
-    func getUserArray(){
-        let d:Observable<Employees> = self.client.sendD(apiRequest: apiRequest)
-        _ = d.bind { emp in
-            self.valueT.onNext(emp)
-        }
+    func sortUsersByFirstName() {
+        let userSortedArray = newValue.sorted{ $0.firstName! < $1.firstName! }
+        newValue.removeAll()
+        newValue.appendContentsOf(userSortedArray )
+    }
+    
+    func sortUsersByLastName() {
+        let userSortedArray = newValue.sorted{ $0.lastName! < $1.lastName! }
+        newValue.removeAll()
+        newValue.appendContentsOf(userSortedArray)
+    }
+    
+    func sortUsersByID() {
+        let userSortedArray = newValue.sorted{ $0.id! < $1.id! }
+        newValue.removeAll()
+        newValue.appendContentsOf(userSortedArray)
     }
 }
