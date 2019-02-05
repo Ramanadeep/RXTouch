@@ -7,7 +7,25 @@
 		<key>DouughApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>59515D4421F057EC00FDCBD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59515D5821F0580200FDCBD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59515D6321F0580300FDCBD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

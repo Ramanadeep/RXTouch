@@ -13,21 +13,21 @@ import ObjectMapper
 import ObservableArray_RxSwift
 
 class UserViewModel{
-    //let users : [User]
+    private var serviceManager:ServiceManager?
     var disposeableBag = DisposeBag()
     let apiRequest = UsersServiceRequest()
-    let client = APIClient()
+    //let client = APIClient()
     let value = PublishSubject<[UserMap]>()
     var newValue = ObservableArray<UserMap>()
     let valueT = PublishSubject<Employees>()
     
-    init() {
-        getUsers()
+    init(serviceManager:ServiceManager) {
+        self.serviceManager = serviceManager
     }
     
     func getUsers() {
-        let serviceObserver = self.client.send(apiRequest: self.apiRequest)
-        _ = serviceObserver.subscribe(onNext: { res in
+        let serviceObserver = self.serviceManager?.requestService(apiRequest: self.apiRequest)
+        _ = serviceObserver?.subscribe(onNext: { res in
             print("SUCCESS VIEWMODEL ----> \(res)")
             do {
                 let result = try JSONSerialization.jsonObject(with: res.result, options: []) as? [[String:Any]]

@@ -45,6 +45,8 @@ struct UserMap:Mappable {
     var lastName:String?
     var email:String?
     
+    init() {}
+    
     init?(map: Map) {
         // check if a required properties exists within the JSON.
         if map.JSON["id"] == nil {

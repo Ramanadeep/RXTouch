@@ -17,8 +17,9 @@ class UsersListViewController: UIViewController {
     @IBOutlet weak var usersTableView: UITableView!
     
     //MARK:- Variables
+    let client = APIClient()
     lazy var userViewModel:UserViewModel = {
-        return UserViewModel()
+        return UserViewModel(serviceManager: client)
     }()
     
     var disposeBag = DisposeBag()
@@ -26,7 +27,8 @@ class UsersListViewController: UIViewController {
     //MARK:- ViewLife cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
+        //bindViewModel()
+        //userViewModel.getUsers()
     }
 }
 

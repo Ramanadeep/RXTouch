@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
+  - Mocker (1.0.0)
   - ObjectMapper (3.4.2)
   - ObservableArray-RxSwift (0.2.0):
     - RxSwift (~> 4.0)
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Mocker (~> 1.0.0)
   - ObjectMapper
   - ObservableArray-RxSwift
   - RxCocoa
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Mocker
     - ObjectMapper
     - ObservableArray-RxSwift
     - RxAtomic
@@ -27,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Mocker: 58560cc516f6240e92492dad66f295e7cdd7cdb2
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   ObservableArray-RxSwift: 905a088f51b1653f7eb55e6887f8a13916618f50
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 98b5a59d95ea80e8a819cfd6444b022eade47ae1
+PODFILE CHECKSUM: b18c262f7e80c140041b576d913da2806a33f820
 
 COCOAPODS: 1.5.3

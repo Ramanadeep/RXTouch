@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B2E52B4DEFE4D8EB41BC551 /* Pods_DouughApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BBFE89EF965C0FF69E6EDD /* Pods_DouughApp.framework */; };
 		3BEAD7E0B188B19EBFF2108B /* Pods_DouughAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EDD21DDEF375194B7402AD /* Pods_DouughAppTests.framework */; };
+		590AA10122055D59000106EC /* UsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AA10022055D59000106EC /* UsersViewModelTests.swift */; };
 		5951424C21F17D00009D4260 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951424B21F17D00009D4260 /* ApiClient.swift */; };
 		5951424E21F17EFA009D4260 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951424D21F17EFA009D4260 /* APIRequest.swift */; };
 		5951425021F18F66009D4260 /* UsersServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951424F21F18F66009D4260 /* UsersServiceRequest.swift */; };
@@ -21,6 +22,7 @@
 		59515D8121F059B600FDCBD4 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D8021F059B600FDCBD4 /* UsersListViewController.swift */; };
 		59515D8321F05B0B00FDCBD4 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D8221F05B0B00FDCBD4 /* UsersViewModel.swift */; };
 		59515D8521F06CBB00FDCBD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59515D8421F06CBB00FDCBD4 /* User.swift */; };
+		59555D3A2206CC1200B39DC6 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 59555D392206CC1200B39DC6 /* example.json */; };
 		E33CF6392A039BF06324F236 /* Pods_DouughAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21F1F4E19139273AE14665B /* Pods_DouughAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,7 @@
 		04602F7985AB1BF5440A3780 /* Pods-DouughApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp.debug.xcconfig"; sourceTree = "<group>"; };
 		29CCD65D1733C1AAD6FF51EE /* Pods-DouughAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouughAppTests/Pods-DouughAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3FAA0A90C694DA3BE0553A22 /* Pods-DouughAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouughAppUITests/Pods-DouughAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		590AA10022055D59000106EC /* UsersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelTests.swift; sourceTree = "<group>"; };
 		5951424B21F17D00009D4260 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5951424D21F17EFA009D4260 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		5951424F21F18F66009D4260 /* UsersServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersServiceRequest.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		59515D8021F059B600FDCBD4 /* UsersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		59515D8221F05B0B00FDCBD4 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		59515D8421F06CBB00FDCBD4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		59555D392206CC1200B39DC6 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 		6E42007358BDBBEC07E66D96 /* Pods-DouughApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouughApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp.release.xcconfig"; sourceTree = "<group>"; };
 		72EDD21DDEF375194B7402AD /* Pods_DouughAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouughAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BBFE89EF965C0FF69E6EDD /* Pods_DouughApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouughApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +126,7 @@
 		59515D3C21F057EC00FDCBD4 = {
 			isa = PBXGroup;
 			children = (
+				59555D392206CC1200B39DC6 /* example.json */,
 				59515D4721F057EC00FDCBD4 /* DouughApp */,
 				59515D5C21F0580200FDCBD4 /* DouughAppTests */,
 				59515D6721F0580300FDCBD4 /* DouughAppUITests */,
@@ -160,6 +165,7 @@
 			children = (
 				59515D5D21F0580200FDCBD4 /* DouughAppTests.swift */,
 				59515D5F21F0580200FDCBD4 /* Info.plist */,
+				590AA10022055D59000106EC /* UsersViewModelTests.swift */,
 			);
 			path = DouughAppTests;
 			sourceTree = "<group>";
@@ -247,7 +253,7 @@
 				59515D4121F057EC00FDCBD4 /* Sources */,
 				59515D4221F057EC00FDCBD4 /* Frameworks */,
 				59515D4321F057EC00FDCBD4 /* Resources */,
-				37104C9981DBADD492D33741 /* [CP] Embed Pods Frameworks */,
+				4203587131D276B146144D17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59555D3A2206CC1200B39DC6 /* example.json in Resources */,
 				59515D7F21F0595100FDCBD4 /* Main.storyboard in Resources */,
 				59515D7E21F0595100FDCBD4 /* LaunchScreen.storyboard in Resources */,
 				59515D5021F0580200FDCBD4 /* Assets.xcassets in Resources */,
@@ -367,38 +374,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37104C9981DBADD492D33741 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObservableArray-RxSwift/ObservableArray_RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObservableArray_RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3C4F9D506183E5F50DDAC6C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +394,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4203587131D276B146144D17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Mocker/Mocker.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObservableArray-RxSwift/ObservableArray_RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mocker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObservableArray_RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouughApp/Pods-DouughApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B6C9A8DE96F116573F8B0756 /* [CP] Check Pods Manifest.lock */ = {
@@ -487,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59515D5E21F0580200FDCBD4 /* DouughAppTests.swift in Sources */,
+				590AA10122055D59000106EC /* UsersViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

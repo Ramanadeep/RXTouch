@@ -12,7 +12,8 @@ target 'DouughApp' do
   pod 'Alamofire'
   pod 'ObjectMapper'
   pod 'ObservableArray-RxSwift'
-  target 'DouughAppTests' do
+  pod 'Mocker', '~> 1.0.0'
+  target 'DouughAppTests' do`
     inherit! :search_paths
     # Pods for testing
   end
